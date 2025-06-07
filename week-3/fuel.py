@@ -8,6 +8,9 @@ def main():
             y= int(y)
             percent = (x*100)/y
 
+            if x>y:
+                raise ValueError
+
             if percent<= 1:
                 print("E")
             elif percent >= 99:
