@@ -13,15 +13,15 @@ import random
 
 def main():
     level = get_level()
-    score = 0  # total correct answers
+    score = 0  
 
-    for _ in range(10):  # exactly 10 problems
+    for _ in range(10): 
         x = generate_integer(level)
         y = generate_integer(level)
         correct_answer = x + y
         tries = 0
 
-        while tries < 3:  # up to 3 attempts
+        while tries < 3:  
             try:
                 user_input = int(input(f"{x} + {y} = "))
                 if user_input == correct_answer:
