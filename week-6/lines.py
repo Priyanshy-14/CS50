@@ -29,8 +29,5 @@ def count_line(filename):
     except FileNotFoundError:
         sys.exit("File does not exist")
 
-
-
-
 if __name__ == "__main__":
     main()
