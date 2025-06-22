@@ -26,4 +26,20 @@ class Jar:
     def size(self):
         return self._cookies
 
-jar = Jar(12)
+
+def main():
+    jar = Jar(6)
+    print("Initial jar:", jar)
+    print("Capacity:", jar.capacity)
+
+    jar.deposit(3)
+    print("After depositing 3:", jar)
+
+    jar.withdraw(1)
+    print("After withdrawing 1:", jar)
+
+    print("Current size:", jar.size)
+
+
+if __name__ == "__main__":
+    main()
